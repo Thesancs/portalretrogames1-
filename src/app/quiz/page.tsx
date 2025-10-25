@@ -229,7 +229,6 @@ export default function QuizPage() {
                   value={option}
                   id={option}
                   className="sr-only"
-                  onClick={() => handleAnswerSelection(option)}
                 />
                 <span>{option}</span>
               </Label>
@@ -259,7 +258,6 @@ export default function QuizPage() {
                 value={option.label}
                 id={option.label}
                 className="sr-only"
-                onClick={() => handleAnswerSelection(option.label)}
               />
               {option.image && (
                 <Image
@@ -301,7 +299,6 @@ export default function QuizPage() {
                 value={optionLabel}
                 id={optionLabel}
                 className="sr-only"
-                onClick={() => handleAnswerSelection(optionLabel)}
               />
               <div className="flex w-full items-center gap-4">
                 {Icon && (
