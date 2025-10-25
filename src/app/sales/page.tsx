@@ -134,7 +134,7 @@ export default function SalesPage() {
 
         <section className="retro-panel mx-auto max-w-5xl p-4 sm:p-8 lg:p-10">
           <div className="retro-panel-content space-y-10">
-            <div className="grid gap-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]">
               <div className="space-y-5">
                 <span className="retro-badge">Oferta definitiva</span>
                 <h3 className="text-3xl font-headline uppercase text-primary sm:text-4xl">
@@ -154,9 +154,9 @@ export default function SalesPage() {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-6 rounded-3xl border border-primary/30 bg-background/80 p-6 text-center text-sm text-muted-foreground shadow-[0_25px_60px_rgba(0,0,0,0.45)] backdrop-blur-xl">
+              <div className="flex w-full flex-col gap-6 rounded-3xl border border-primary/30 bg-background/80 p-6 text-center text-sm text-muted-foreground shadow-[0_25px_60px_rgba(0,0,0,0.45)] backdrop-blur-xl">
                 <p className="text-xs uppercase tracking-[0.35em] text-primary">De R$127,90 por apenas</p>
-                <p className="font-pixel text-5xl text-primary text-glow">R$19,90</p>
+                <p className="font-pixel text-4xl text-primary text-glow sm:text-5xl">R$19,90</p>
                 <p>
                   Menos que um lanche para ter uma vida inteira de memorias desbloqueadas, com atualizacoes e suporte.
                 </p>
@@ -165,10 +165,10 @@ export default function SalesPage() {
                   alt="Metodos de pagamento"
                   width={260}
                   height={44}
-                  className="mx-auto h-10 w-auto object-contain"
+                  className="mx-auto h-10 w-full max-w-[260px] object-contain"
                 />
                 <Link
-                  href="/checkout"
+                  href="https://checkout.imperiumpay.app/checkout/cmh5gys2g0206nif9y56lh5bb?offer=GFKF3X0"
                   className="btn-pixel w-full px-6 py-4 text-sm tracking-[0.12em] sm:w-auto sm:px-10 sm:py-5 sm:text-lg sm:tracking-[0.28em]"
                 >
                   Quero reviver agora
